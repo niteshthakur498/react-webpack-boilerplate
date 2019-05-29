@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './App.css'
+import image from './static/temp.jpeg'
 
 class App extends Component {
     render() {
         return (
             <div>
-                React App Appaa
+                <img  src={image}/>
             </div>
         )
     }
