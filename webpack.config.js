@@ -30,7 +30,7 @@ module.exports = {
             },
             {
               test: /\.css/,
-              loaders: [
+              use: [
                 {
                   loader: 'style-loader'
                 },
@@ -46,7 +46,11 @@ module.exports = {
                   loader: 'file-loader'
                 }
               ]
-            }
+            },
+            // {
+            //   test : /\.scss/,
+            //   load
+            // }
         ]
     },
     plugins: [
