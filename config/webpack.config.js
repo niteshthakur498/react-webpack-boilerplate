@@ -47,10 +47,20 @@ module.exports = {
                 }
               ]
             },
-            // {
-            //   test : /\.scss/,
-            //   load
-            // }
+            {
+              test: /\.(scss)$/,
+              use: [
+                {
+                  loader: 'style-loader'
+                },
+                {
+                  loader: 'css-loader'
+                },
+                {
+                  loader: 'sass-loader'
+                }
+              ]
+            }
         ]
     },
     plugins: [
